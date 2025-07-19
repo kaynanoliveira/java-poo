@@ -5,14 +5,14 @@ public class Personagem {
     int nivel;
     int forca;
 
-    int calcularDano(){
+    public int calcularDano(){
         Random gerador = new Random();
         int dado20Faces = 1 + gerador.nextInt(19);
         int dano = forca + dado20Faces;
         return dano;
     }
 
-    void atacar(String inimigo, String arma){
+    public void atacar(String inimigo, String arma){
         int danoCausado = calcularDano();
         if(arma.isEmpty()){
             System.out.printf("%s atacou %s e causou %d de dano",
@@ -23,7 +23,7 @@ public class Personagem {
         }
     }
 
-    void mostrarStatus(){
+    public void mostrarStatus(){
         System.out.printf("Personagem: %s no nivel (lvl: %d) com %d de força \n", nome, nivel, forca);
     }
 }
