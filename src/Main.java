@@ -1,11 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Personagem heroi = new Personagem();
-        heroi.nome = "Homem de ferro";
-        heroi.nivel = 1;
-        heroi.forca = 20;
-
-        heroi.mostrarStatus();
-        heroi.atacar("Thanos", "Espada");
+        Pessoa p1 = new Pessoa();
+        p1.setNome("Kaynan");
+        p1.setAltura(1.73f);
+        p1.setDataNascimento("26/02/2006");
+        p1.calcularIdade();
+        p1.imprimirPessoa();
     }
 }
