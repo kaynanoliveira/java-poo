@@ -1,8 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Elevador elevador1 = new Elevador(5, 3);
+        Funcionarios funcionario1 = new Funcionarios("Kaynan", "Oliveira", 1500.0);
+        Funcionarios funcionario2 = new Funcionarios("Lucas", "Duarte", 2500.0);
 
-        elevador1.subir();
-        elevador1.entrar();
+        funcionario1.exibirDados();
+        funcionario1.aumentarSalario();
+        funcionario1.exibirDados();
     }
 }
