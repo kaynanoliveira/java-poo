@@ -11,8 +11,9 @@ public class IngressoVip extends Ingresso {
          return super.getValorIngresso() + valorAdicional;
     }
 
-
-    public void imprimirValorVip(){
-        System.out.printf("Valor do ingresso R$ %.2f + adicional R$ %.2f = total R$ %.2f\n", getValorIngresso(), valorAdicional, getValorVip());
+    @Override
+    public void imprimirValor() {
+        System.out.printf("Valor do ingresso %.2fR$ + adicional %.2fR$ = total %.2fR$\n",
+                getValorIngresso(), valorAdicional, getValorVip());
     }
 }

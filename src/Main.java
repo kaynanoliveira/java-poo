@@ -3,6 +3,6 @@ public class Main {
         Ingresso ingresso = new Ingresso(20.30);
         ingresso.imprimirValor();
         IngressoVip ingressoVip = new IngressoVip(30.0, 5.0);
-        ingressoVip.imprimirValorVip();
+        ingressoVip.imprimirValor();
     }
 }
