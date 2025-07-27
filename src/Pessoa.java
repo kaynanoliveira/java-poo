@@ -40,9 +40,9 @@ public class Pessoa {
     }
 
     public void imprimirPessoa() {
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Data de Nascimento: " + this.dataNascimento);
-        System.out.println("Altura: " + this.altura);
+        System.out.println("Nome: " + getNome());
+        System.out.println("Data de Nascimento: " + getDataNascimento());
+        System.out.println("Altura: " + getAltura());
         System.out.println("Idade: " + calcularIdade());
     }
 }
