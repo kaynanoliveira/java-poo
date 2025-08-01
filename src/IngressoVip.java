@@ -1,4 +1,4 @@
-public class IngressoVip extends Ingresso {
+public class IngressoVip extends Ingresso implements Imprimir {
 
     private double valorAdicional;
 

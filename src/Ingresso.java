@@ -1,4 +1,4 @@
-public class Ingresso {
+public class Ingresso implements Imprimir{
     private double valorIngresso;
 
     public Ingresso(double valorIngresso) {
